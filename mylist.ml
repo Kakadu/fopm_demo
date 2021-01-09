@@ -95,24 +95,10 @@ let rec mylength acc xs : int =
   let (n: (string list, int -> 'a, 'a) Pattern0.t) =
     nil |> map0 ~f:0
   in
-
   parse (c ||| n ) () xs (fun x () -> x) ()
 
 
-let () = Printf.printf "%d\n"  (mylength 0 ["1"])     (* Prints zero which is wrong *)
+let () = Printf.printf "%d\n"  (mylength 0 ["1"])     (* Prints zero which is wrong, I expect 1 *)
 
 let%test _ =
   mylength 0 ["1"; "1"; "1"] = 3
-
-(*
-let%test _ = parse (var __) () (Var "asdf") (fun name -> name = "asdf")
-
-let%test _ = parse (app (var __) (var __)) () (App (Var "a", Var "b"))
-  (fun l r -> (l="a") && r="b")
-
-
-let%test _ = parse ((var (name "a") ||| (var (name "b")))) () (Var "a")
-  true
-let%test _ = parse ((var (name "a") ||| (var (name "b")))) () (Var "b")
-  true
- *)
