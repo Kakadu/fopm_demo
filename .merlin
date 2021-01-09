@@ -1,0 +1,33 @@
+EXCLUDE_QUERY_DIR
+B /home/kakadu/.opam/4.10.1+fp+flambda/lib/base
+B /home/kakadu/.opam/4.10.1+fp+flambda/lib/base/base_internalhash_types
+B /home/kakadu/.opam/4.10.1+fp+flambda/lib/base/caml
+B /home/kakadu/.opam/4.10.1+fp+flambda/lib/base/shadow_stdlib
+B /home/kakadu/.opam/4.10.1+fp+flambda/lib/jane-street-headers
+B /home/kakadu/.opam/4.10.1+fp+flambda/lib/ppx_compare/runtime-lib
+B /home/kakadu/.opam/4.10.1+fp+flambda/lib/ppx_enumerate/runtime-lib
+B /home/kakadu/.opam/4.10.1+fp+flambda/lib/ppx_hash/runtime-lib
+B /home/kakadu/.opam/4.10.1+fp+flambda/lib/ppx_inline_test/config
+B /home/kakadu/.opam/4.10.1+fp+flambda/lib/ppx_inline_test/runtime-lib
+B /home/kakadu/.opam/4.10.1+fp+flambda/lib/ppx_sexp_conv/runtime-lib
+B /home/kakadu/.opam/4.10.1+fp+flambda/lib/sexplib0
+B /home/kakadu/.opam/4.10.1+fp+flambda/lib/time_now
+B _build/default/.Pattern0.objs/byte
+B _build/default/.lambda_demo.objs/byte
+B _build/default/.list_demo.objs/byte
+S /home/kakadu/.opam/4.10.1+fp+flambda/lib/base
+S /home/kakadu/.opam/4.10.1+fp+flambda/lib/base/base_internalhash_types
+S /home/kakadu/.opam/4.10.1+fp+flambda/lib/base/caml
+S /home/kakadu/.opam/4.10.1+fp+flambda/lib/base/shadow_stdlib
+S /home/kakadu/.opam/4.10.1+fp+flambda/lib/jane-street-headers
+S /home/kakadu/.opam/4.10.1+fp+flambda/lib/ppx_compare/runtime-lib
+S /home/kakadu/.opam/4.10.1+fp+flambda/lib/ppx_enumerate/runtime-lib
+S /home/kakadu/.opam/4.10.1+fp+flambda/lib/ppx_hash/runtime-lib
+S /home/kakadu/.opam/4.10.1+fp+flambda/lib/ppx_inline_test/config
+S /home/kakadu/.opam/4.10.1+fp+flambda/lib/ppx_inline_test/runtime-lib
+S /home/kakadu/.opam/4.10.1+fp+flambda/lib/ppx_sexp_conv/runtime-lib
+S /home/kakadu/.opam/4.10.1+fp+flambda/lib/sexplib0
+S /home/kakadu/.opam/4.10.1+fp+flambda/lib/time_now
+S .
+FLG -ppx '/media/oldhome/kakadu/prog/asp/fopm/_build/default/.ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --as-ppx --cookie '\''inline_tests="enabled"'\'' --cookie '\''library-name="lambda_demo"'\'''
+FLG -open Lambda_demo -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -3-9-32-33-27-39 -open List_demo -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -3-9-32-33-27-39 -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -3-9-32-33-27-39

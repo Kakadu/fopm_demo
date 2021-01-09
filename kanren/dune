@@ -1,0 +1,12 @@
+(env
+ (_
+  (flags
+   (:standard -rectypes -w -3-9-32-27-39))))
+
+(library
+ (name kanren_demo)
+ (modules kanren)
+ (libraries Pattern0)
+ (inline_tests)
+ (preprocess
+  (pps ppx_inline_test)))
